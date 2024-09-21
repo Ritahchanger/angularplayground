@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { FormsModule } from "@angular/forms"
+import { UserService } from '../../service/user.service';
 
 
 @Component({
@@ -19,6 +20,30 @@ export class LoginComponent {
     "Password":"12345678"
 
   }
+
+  userService  = inject(UserService)
+
+  login(){
+
+    this.userService.onLogin(this.loginObj).subscribe((res:any)=>{
+
+      if(res.result){
+
+        localStorage.setItem("userApp",JSON.stringify(res.data))
+
+    
+
+
+      }else{
+
+        alert(res.message)
+
+      }
+
+    })
+
+  }
+
 
 
 }

@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Outfit",sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
-a{
-    text-decoration:none;
+a {
+  text-decoration: none;
 }
 
-ul{
-
-    list-style:none;
+ul {
+  list-style: none;
 }
 
-.container{
+.container {
+  width: 100%;
 
-    width:100%;
+  max-width: 1300px;
 
-    max-width:1300px;
+  margin: 0 auto;
 
-    margin:0 auto;
-
+  padding:0.5rem 1rem;
 }
