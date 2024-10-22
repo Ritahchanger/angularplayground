@@ -32,8 +32,6 @@ export class LoginComponent {
         localStorage.setItem("userApp",JSON.stringify(res.data))
 
     
-
-
       }else{
 
         alert(res.message)

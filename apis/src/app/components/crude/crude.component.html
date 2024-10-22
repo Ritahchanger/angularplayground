@@ -1,0 +1,31 @@
+<h1>JSON PLACEHOLDER'S USERS</h1>
+<div *ngIf="getJsonValue && getJsonValue.length > 0; else noData">
+  <h2>User List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>PHONE</th>
+        <th>WEBSITE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of getJsonValue">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noData>
+  <p>No user data available.</p>
+</ng-template>
