@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { NavbarComponent } from '../navbar/navbar.component';
 
 import { CrudeComponent } from '../crude/crude.component';
@@ -14,5 +16,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
 
 }

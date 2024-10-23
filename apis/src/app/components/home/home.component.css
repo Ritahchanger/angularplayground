@@ -1,0 +1,39 @@
+.container-form{
+
+    width:100%;
+
+    padding:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+.container-form form{
+
+    max-width:800px;
+
+    width:96%;
+
+
+    margin:0 auto;
+
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+
+    padding:1rem;
+
+}
+.container-form form input{
+
+    width:100%;
+
+    padding:7px;
+
+    margin:5px 0rem;
+
+}
+.container-form .input-group{
+    width:100%;
+}
